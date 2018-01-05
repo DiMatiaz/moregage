@@ -1,0 +1,201 @@
+@import "reset.css";
+
+
+/* Generic */
+header, footer {
+    padding: 16px 12px;
+}
+header {
+    border-bottom: 1px solid #999;
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.flex {
+    display: flex;
+}
+.row {
+    flex-direction: row;
+}
+.col {
+    flex-direction: column;
+}
+.grid {
+    display: grid;
+}
+.fa-user {
+    color: white;
+    line-height: 30px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+footer {
+    background-color: #999;
+}
+/* Header */
+.menu li,
+footer li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 6px;
+}
+.menu {
+    justify-content: center;
+    margin-left: auto;
+}
+.logo img{
+    height: 40px;
+    width: 240px;
+}
+.user {
+    border-radius: 15px;
+    background: #21CE99;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+}
+/* Main */
+main span {
+    color: #333;
+    line-height: 30px;
+}
+.main-grid {
+    grid-template-areas: "menu border form";
+    min-height: 100vh;
+    width: 100vw;
+}
+.menu-grid {
+    grid-area: menu;
+    min-height: 100vh;
+    width: 25vw;
+}
+.form-grid {
+    grid-area: form;
+    min-height: 100vh;
+    width: 75vw;
+}
+.selected {
+    font-weight: bold;
+}
+.account-grid {
+    max-height: 200px; 
+    justify-content: center;
+}
+.account-grid a,
+.account-grid li {
+    margin: 10px 0;
+}
+.account-grid ul,
+.account-grid .green-btn{
+    margin-left: 20px;
+}
+.account-grid ul {
+    margin-top: 50px;
+}
+.green-btn {
+    border: 1px solid #21CE99;
+    border-radius: 20px;
+    color: #21CE99;
+    padding: 6px 26px;
+}
+.aligned-forms {
+    margin: 50px 80px;
+    max-width: 610px;
+}
+.learn {
+    color: #21CE99;
+    display:block;
+}
+.form {
+    max-width: 600px;
+}
+input, select {
+    float: right;
+    width: 400px;
+}
+form> div {
+    margin: 4px 0;
+}
+.input {
+    margin: 20px 0;
+}
+.pw {
+    height: 30px;
+}
+.pw:last-of-type {
+    margin-bottom: 20px;
+}
+input, select {
+    height: 30px;
+}
+.country {
+    height: 30px;
+}
+.notes {
+    margin-top: 10px;
+}
+.notes p {
+    float: right;
+    font-size: 13px;
+    width: 400px;
+}
+.check input {
+    float: none;
+    height: 20px;
+    margin: auto 2px;
+    width: 20px;
+}
+.check .row {
+    align-items: center;
+    height: 30px;
+}
+.check p {
+    font-weight: bold;
+}
+.check .row:first-of-type {
+    margin-top: 30px;
+}
+.check {
+    margin-left: auto;
+    width: 400px;
+}
+.btn-grid {
+    grid-template-areas: "cancel save";
+    justify-self: end;
+    margin-top: 20px;
+    width: 240px;
+}
+.save {
+    background-color: #21CE99;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: auto;
+    text-align: center;
+    width: 150px;
+}
+.cancel, .save {
+    padding: 6px 0;
+}
+.border {
+    background-color:  #999;
+    height: 95%;
+    width: 1px;
+}
+
+/* Footer */
+.footer-row {
+    justify-content: center;
+}
+.footer-row>.col {
+    align-items: center;
+}
+.copy {
+    font-size: 10px;
+}
+footer a {
+    font-size: 11px;
+}
